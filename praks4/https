@@ -1,0 +1,19 @@
+#HTTPS SEADISTAMINE
+
+1. a2enmod ssl
+2. a2ensite default-ssl
+3. service apache2 reload
+3. mkdir /etc/apache2/ssl
+4. openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/apache2/ssl/apache.key -out  
+/etc/apache2/ssl/apache.crt #tuli täita väljad, viimasel real lisada enda ip (172.23.13.39)
+5. chmod 600 /etc/apache2/ssl*
+6. nano /etc/apache2/sites-enabled/default-ssl.conf
+7. nano apache2/sites-enabled/default
+	#kirjutasin faili sisse
+	ServerAdmin it@localhost
+	ServerName 172.23.13.39:443 #et oleks õige port
+	#SSLCertificateFile /etc/apace2/ssl/apache.crt
+	#SSLCertificateKeyFile /etc/apache2/ssl/apache.key
+8. service apache2 reload #Apache2 restart
+
+Kirjutasin Google Chromei https://172.23.13.39 ning töötas
