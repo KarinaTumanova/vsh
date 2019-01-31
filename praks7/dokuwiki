@@ -1,0 +1,31 @@
+#DOKUWIKI INSTALL
+
+1. apt-get update
+2. apt-get upgrade
+3. apt install wget bash-completion zip unzip curl #wget, unzip ja zip olid juba olemas
+4. hostnamectl set-hostname www.mywiki.com
+5. hostnamectl
+6. cat /etcc/hostname
+7. hostname -s
+8. hostname -f
+9. apt install imagemagick
+10. init 6
+11. apt install apache2 libapache2-mod-php7.0 php7.0 php7.0-curl php7.0-opache php7.0-json 
+php7.0-mbstring php7.0-intl php-imagick php7.0-xml
+12. netstat -tlpn #install netstat - apt install net-tools
+13. ss- tulpn
+14. ufw allow WWW
+15. systemctl restart apache2
+16. wget https://download.dokuwiki.org/src/dokuwiki/dokuwiki-stable.tgz
+17. unzip dokuwiki-stable.tgz
+18. ls
+19. rm /var/www/html/index.php
+20. rm /var/www/html/info.php
+21. kopeerid dokuwiki faili kausta /var/www/html
+22. kopeerid dokuwiki /.htaccess.dist faili ka /var/www/html kausta, et nad oleks ühes kohas
+23. anname õigused sellele kaustale - chown -R www-data:www-data /var/www/html/
+24. ls -al /var/www/html
+25. avan veebis enda lehe http://10.0.2.15/install.php #selline ip sest tegin kodus
+26. täidad veebis vajalikud väljad.
+
+
