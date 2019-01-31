@@ -1,0 +1,23 @@
+#WORDPRESS INSTALL
+
+1. cd /var/www/html #sinna kausta tuleb alla laadida
+2. wget https://wordpress.org/latest.zip
+3. apt install unzip/aptitude install unzip #unzip käsuga on lihtsam lahti pakkida
+#pakkisin lahti: unzip -q latest.zip
+4. chown -R www-data:www-data /var/www/html/wordpress
+5. chmod -R 755 /var/www/html/wordpress
+6. mkdir -p /var/www/html/wordpress/wp-content/uploads
+7. chown -R www-data:www-data /var/www/html/wordpress/wp-content/uploads
+
+#MYSQL ANDMEBAAS
+
+1. mysql -u root -p #sisened mysqli
+2. CREATE DATABASE wordpress;
+3. CREATE USER 'it'@'localhost' IDENTIFIED BY 'qwerty';
+4. GRANT ALL PRIVILEGES ON wordpress.* TO 'it'@'loalhost';
+5. FLUSH PRIVILEGES;
+6. EXIT;
+
+Wordpress on kättesaadav aadressil https://172.23.13.39/wordpress - järgisin juhendit ning seadsin veebilehe üles.
+
+
