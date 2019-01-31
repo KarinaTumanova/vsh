@@ -1,0 +1,16 @@
+#Kloonisin vajalikud masinad. #Installeerisin Ubuntu 18 kliendi
+#Masinad on ühes NAT võrgus - karinavork
+
+Esimene masin:
+
+Installeerisin Apache2, Wordpress, MySql, php.
+
+Teine masin:
+
+Installeerisin MySql
+
+#Selleks, et ühest masinast saaks ühendust teistega tuleb mq.sql failis leida bind koht,
+#kuhu kirjutada taha enda teise masina ip, et nad teineteist üles leiaks.
+#vaja on ka uut kasutajat, kellel peavad olema vajalikud õigused.
+
+Andmebaasi serveris fail - /etc/mysql/my.conf
