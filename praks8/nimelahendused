@@ -1,0 +1,14 @@
+#Tegin kodus uue virtuaalmasina ning tahtsin teha viimast ül, panin ül githubi
+kuid see kustutas kõik eelnevad ül ära. Seega tegin kodus kõik failid uuesti ning panin
+uuesti githubi.
+
+Nimelahenduste ülesande tegin õpetaja variandi järgi, mis on Google Drive tabelis.
+
+Vaja installida:
+1. apt-get install -y apache2
+2. apt-get install -y mysql-server
+3. apt-get install phpmyadmin
+
+Lisasin /etc/hosts kausta enda read.
+Tegin veebikataloogid /var/www/html kausta.
+
